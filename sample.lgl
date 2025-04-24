@@ -1,0 +1,24 @@
+config: {
+    name: "sample".
+    extension: "sp".
+}.
+
+dataType: {
+    int: ***
+        #{range: -256~256}.
+    ***.
+    char: ***
+        "'" #{range: 0~655350, char: true}. "'"
+    ***.
+}.
+
+command: {
+    print: {
+        code: ***
+            "print" "(" <int number> ")" ";"
+        ***.
+        processes: ///
+            print(number)
+        ///.
+    }.
+}.
