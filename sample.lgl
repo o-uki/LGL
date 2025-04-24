@@ -18,7 +18,8 @@ command: {
             "print" "(" <int number> ")" ";"
         ***.
         processes: ///
-            print(number)
+            print(number);
+            print("\n");
         ///.
     }.
 }.
